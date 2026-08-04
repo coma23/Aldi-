@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-pescadorgriegobn" gradientTransform="rotate(193)">
+      <stop offset="0%" stop-color="#4a4a4a" />
+      <stop offset="100%" stop-color="#c9c9c9" />
+    </linearGradient>
+    <radialGradient id="dot-pescadorgriegobn">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-pescadorgriegobn">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-pescadorgriegobn)" />
+  <circle cx="471" cy="264" r="892" fill="url(#dot-pescadorgriegobn)" opacity="0.17" /><circle cx="1291" cy="1265" r="748" fill="url(#dot-pescadorgriegobn)" opacity="0.11" /><circle cx="839" cy="837" r="774" fill="url(#dot-pescadorgriegobn)" opacity="0.12" /><circle cx="519" cy="61" r="796" fill="url(#dot-pescadorgriegobn)" opacity="0.16" /><circle cx="261" cy="888" r="737" fill="url(#dot-pescadorgriegobn)" opacity="0.20" /><circle cx="143" cy="1604" r="913" fill="url(#dot-pescadorgriegobn)" opacity="0.19" /><circle cx="611" cy="1216" r="721" fill="url(#dot-pescadorgriegobn)" opacity="0.11" />
+  <rect width="1360" height="1700" filter="url(#grain-pescadorgriegobn)" />
+</svg>

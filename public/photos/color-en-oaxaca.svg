@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-colorenoaxaca" gradientTransform="rotate(229)">
+      <stop offset="0%" stop-color="#4f4a3e" />
+      <stop offset="100%" stop-color="#f7c869" />
+    </linearGradient>
+    <radialGradient id="dot-colorenoaxaca">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-colorenoaxaca">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-colorenoaxaca)" />
+  <circle cx="998" cy="195" r="833" fill="url(#dot-colorenoaxaca)" opacity="0.11" /><circle cx="390" cy="677" r="842" fill="url(#dot-colorenoaxaca)" opacity="0.13" /><circle cx="983" cy="833" r="859" fill="url(#dot-colorenoaxaca)" opacity="0.16" /><circle cx="708" cy="681" r="929" fill="url(#dot-colorenoaxaca)" opacity="0.20" /><circle cx="1036" cy="1000" r="751" fill="url(#dot-colorenoaxaca)" opacity="0.18" /><circle cx="1215" cy="686" r="983" fill="url(#dot-colorenoaxaca)" opacity="0.21" /><circle cx="265" cy="493" r="563" fill="url(#dot-colorenoaxaca)" opacity="0.14" />
+  <rect width="1360" height="1700" filter="url(#grain-colorenoaxaca)" />
+</svg>

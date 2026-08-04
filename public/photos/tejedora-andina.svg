@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-tejedoraandina" gradientTransform="rotate(310)">
+      <stop offset="0%" stop-color="#7a4f36" />
+      <stop offset="100%" stop-color="#e7b483" />
+    </linearGradient>
+    <radialGradient id="dot-tejedoraandina">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-tejedoraandina">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-tejedoraandina)" />
+  <circle cx="327" cy="70" r="690" fill="url(#dot-tejedoraandina)" opacity="0.19" /><circle cx="283" cy="1148" r="790" fill="url(#dot-tejedoraandina)" opacity="0.12" /><circle cx="356" cy="201" r="843" fill="url(#dot-tejedoraandina)" opacity="0.11" /><circle cx="851" cy="1569" r="685" fill="url(#dot-tejedoraandina)" opacity="0.17" /><circle cx="904" cy="1001" r="917" fill="url(#dot-tejedoraandina)" opacity="0.16" /><circle cx="1207" cy="420" r="566" fill="url(#dot-tejedoraandina)" opacity="0.17" /><circle cx="1144" cy="468" r="696" fill="url(#dot-tejedoraandina)" opacity="0.16" />
+  <rect width="1360" height="1700" filter="url(#grain-tejedoraandina)" />
+</svg>

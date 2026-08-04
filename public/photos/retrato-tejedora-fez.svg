@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-retratotejedorafez" gradientTransform="rotate(270)">
+      <stop offset="0%" stop-color="#7a4f36" />
+      <stop offset="100%" stop-color="#e7b483" />
+    </linearGradient>
+    <radialGradient id="dot-retratotejedorafez">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-retratotejedorafez">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-retratotejedorafez)" />
+  <circle cx="901" cy="772" r="939" fill="url(#dot-retratotejedorafez)" opacity="0.14" /><circle cx="295" cy="1155" r="581" fill="url(#dot-retratotejedorafez)" opacity="0.14" /><circle cx="736" cy="1543" r="793" fill="url(#dot-retratotejedorafez)" opacity="0.14" /><circle cx="454" cy="1183" r="746" fill="url(#dot-retratotejedorafez)" opacity="0.11" /><circle cx="276" cy="321" r="734" fill="url(#dot-retratotejedorafez)" opacity="0.15" /><circle cx="360" cy="41" r="869" fill="url(#dot-retratotejedorafez)" opacity="0.18" /><circle cx="126" cy="13" r="729" fill="url(#dot-retratotejedorafez)" opacity="0.21" />
+  <rect width="1360" height="1700" filter="url(#grain-retratotejedorafez)" />
+</svg>

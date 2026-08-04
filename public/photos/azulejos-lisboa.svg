@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-azulejoslisboa" gradientTransform="rotate(76)">
+      <stop offset="0%" stop-color="#4f4a3e" />
+      <stop offset="100%" stop-color="#f7c869" />
+    </linearGradient>
+    <radialGradient id="dot-azulejoslisboa">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-azulejoslisboa">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-azulejoslisboa)" />
+  <circle cx="610" cy="1413" r="968" fill="url(#dot-azulejoslisboa)" opacity="0.19" /><circle cx="40" cy="1435" r="949" fill="url(#dot-azulejoslisboa)" opacity="0.10" /><circle cx="419" cy="272" r="547" fill="url(#dot-azulejoslisboa)" opacity="0.13" /><circle cx="944" cy="163" r="686" fill="url(#dot-azulejoslisboa)" opacity="0.23" /><circle cx="88" cy="19" r="793" fill="url(#dot-azulejoslisboa)" opacity="0.17" /><circle cx="289" cy="1409" r="469" fill="url(#dot-azulejoslisboa)" opacity="0.10" /><circle cx="911" cy="985" r="450" fill="url(#dot-azulejoslisboa)" opacity="0.16" />
+  <rect width="1360" height="1700" filter="url(#grain-azulejoslisboa)" />
+</svg>

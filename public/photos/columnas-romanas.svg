@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-columnasromanas" gradientTransform="rotate(224)">
+      <stop offset="0%" stop-color="#5d5344" />
+      <stop offset="100%" stop-color="#efe5cd" />
+    </linearGradient>
+    <radialGradient id="dot-columnasromanas">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-columnasromanas">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-columnasromanas)" />
+  <circle cx="390" cy="1010" r="755" fill="url(#dot-columnasromanas)" opacity="0.23" /><circle cx="1262" cy="77" r="629" fill="url(#dot-columnasromanas)" opacity="0.13" /><circle cx="393" cy="1274" r="452" fill="url(#dot-columnasromanas)" opacity="0.10" /><circle cx="386" cy="1188" r="848" fill="url(#dot-columnasromanas)" opacity="0.11" /><circle cx="1070" cy="572" r="510" fill="url(#dot-columnasromanas)" opacity="0.19" /><circle cx="640" cy="21" r="552" fill="url(#dot-columnasromanas)" opacity="0.22" /><circle cx="854" cy="1131" r="824" fill="url(#dot-columnasromanas)" opacity="0.18" />
+  <rect width="1360" height="1700" filter="url(#grain-columnasromanas)" />
+</svg>

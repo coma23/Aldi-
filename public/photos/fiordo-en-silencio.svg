@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1020" viewBox="0 0 1360 1020">
+  <defs>
+    <linearGradient id="grad-fiordoensilencio" gradientTransform="rotate(83)">
+      <stop offset="0%" stop-color="#215773" />
+      <stop offset="100%" stop-color="#82cdd8" />
+    </linearGradient>
+    <radialGradient id="dot-fiordoensilencio">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-fiordoensilencio">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1020" fill="url(#grad-fiordoensilencio)" />
+  <circle cx="851" cy="962" r="423" fill="url(#dot-fiordoensilencio)" opacity="0.22" /><circle cx="282" cy="716" r="788" fill="url(#dot-fiordoensilencio)" opacity="0.23" /><circle cx="813" cy="611" r="559" fill="url(#dot-fiordoensilencio)" opacity="0.11" /><circle cx="537" cy="92" r="574" fill="url(#dot-fiordoensilencio)" opacity="0.14" /><circle cx="113" cy="382" r="799" fill="url(#dot-fiordoensilencio)" opacity="0.11" /><circle cx="157" cy="566" r="729" fill="url(#dot-fiordoensilencio)" opacity="0.11" /><circle cx="842" cy="927" r="455" fill="url(#dot-fiordoensilencio)" opacity="0.21" />
+  <rect width="1360" height="1020" filter="url(#grain-fiordoensilencio)" />
+</svg>

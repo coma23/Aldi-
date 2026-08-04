@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="1360" viewBox="0 0 1020 1360">
+  <defs>
+    <linearGradient id="grad-flamencoenmovimiento" gradientTransform="rotate(167)">
+      <stop offset="0%" stop-color="#7a4f36" />
+      <stop offset="100%" stop-color="#e7b483" />
+    </linearGradient>
+    <radialGradient id="dot-flamencoenmovimiento">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-flamencoenmovimiento">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1020" height="1360" fill="url(#grad-flamencoenmovimiento)" />
+  <circle cx="344" cy="239" r="744" fill="url(#dot-flamencoenmovimiento)" opacity="0.19" /><circle cx="665" cy="1267" r="601" fill="url(#dot-flamencoenmovimiento)" opacity="0.16" /><circle cx="163" cy="904" r="651" fill="url(#dot-flamencoenmovimiento)" opacity="0.12" /><circle cx="439" cy="717" r="373" fill="url(#dot-flamencoenmovimiento)" opacity="0.14" /><circle cx="533" cy="1241" r="385" fill="url(#dot-flamencoenmovimiento)" opacity="0.20" /><circle cx="242" cy="1007" r="479" fill="url(#dot-flamencoenmovimiento)" opacity="0.19" /><circle cx="38" cy="376" r="376" fill="url(#dot-flamencoenmovimiento)" opacity="0.11" />
+  <rect width="1020" height="1360" filter="url(#grain-flamencoenmovimiento)" />
+</svg>

@@ -1,0 +1,117 @@
+// Prisma schema for the photography portfolio & store.
+// SQLite for zero-config local/dev use — swap the datasource to
+// PostgreSQL for production (see README.md).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Category {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  description String
+  sortOrder   Int     @default(0)
+  photos      Photo[]
+}
+
+model Country {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  /// ISO 3166-1 numeric code (as a string), used to match the world-atlas topojson.
+  isoCode     String  @unique
+  description String
+  visitedYear Int?
+  photos      Photo[]
+}
+
+model Photo {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String
+  location    String
+  capturedAt  DateTime
+  imageUrl    String
+  width       Int
+  height      Int
+  featured    Boolean  @default(false)
+  sortOrder   Int      @default(0)
+
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  countryId String
+  country   Country @relation(fields: [countryId], references: [id])
+
+  prices     PriceOption[]
+  orderItems OrderItem[]
+
+  createdAt DateTime @default(now())
+}
+
+/// A purchasable option for a photo: a digital download or a physical
+/// print in a given size.
+model PriceOption {
+  id          String @id @default(cuid())
+  /// "DIGITAL" | "PRINT"
+  type        String
+  label       String
+  description String @default("")
+  amountCents Int
+  currency    String @default("eur")
+  sortOrder   Int    @default(0)
+
+  photoId String
+  photo   Photo @relation(fields: [photoId], references: [id])
+
+  orderItems OrderItem[]
+}
+
+model Order {
+  id              String @id @default(cuid())
+  stripeSessionId String @unique
+  email           String
+
+  /// "PENDING" | "PAID" | "FULFILLED" | "CANCELED"
+  status String @default("PENDING")
+
+  totalCents Int
+  currency   String @default("eur")
+
+  shippingName    String?
+  shippingAddress String?
+  shippingCity    String?
+  shippingZip     String?
+  shippingCountry String?
+
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OrderItem {
+  id          String @id @default(cuid())
+  title       String
+  label       String
+  /// "DIGITAL" | "PRINT"
+  type        String
+  quantity    Int    @default(1)
+  amountCents Int
+
+  orderId String
+  order   Order @relation(fields: [orderId], references: [id])
+
+  photoId String
+  photo   Photo @relation(fields: [photoId], references: [id])
+
+  priceOptionId String?
+  priceOption   PriceOption? @relation(fields: [priceOptionId], references: [id])
+}

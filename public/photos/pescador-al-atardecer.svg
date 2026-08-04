@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1700" viewBox="0 0 1360 1700">
+  <defs>
+    <linearGradient id="grad-pescadoralatardecer" gradientTransform="rotate(309)">
+      <stop offset="0%" stop-color="#7a4f36" />
+      <stop offset="100%" stop-color="#e7b483" />
+    </linearGradient>
+    <radialGradient id="dot-pescadoralatardecer">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-pescadoralatardecer">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+  </defs>
+  <rect width="1360" height="1700" fill="url(#grad-pescadoralatardecer)" />
+  <circle cx="138" cy="776" r="877" fill="url(#dot-pescadoralatardecer)" opacity="0.12" /><circle cx="1286" cy="316" r="496" fill="url(#dot-pescadoralatardecer)" opacity="0.12" /><circle cx="640" cy="275" r="483" fill="url(#dot-pescadoralatardecer)" opacity="0.23" /><circle cx="1214" cy="679" r="986" fill="url(#dot-pescadoralatardecer)" opacity="0.21" /><circle cx="429" cy="242" r="964" fill="url(#dot-pescadoralatardecer)" opacity="0.22" /><circle cx="896" cy="1572" r="633" fill="url(#dot-pescadoralatardecer)" opacity="0.18" /><circle cx="63" cy="1386" r="524" fill="url(#dot-pescadoralatardecer)" opacity="0.22" />
+  <rect width="1360" height="1700" filter="url(#grain-pescadoralatardecer)" />
+</svg>
